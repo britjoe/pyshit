@@ -1,0 +1,17 @@
+n = int(input())
+ss = n % 60
+m = (n - ss) // 60
+mm = m % 60
+h = (n - ss - mm * 60) // 3600
+hh = h % 24
+hh = str(hh)
+mm = str(mm + 100)
+ss = str(ss + 100)
+# h = (n // (60 * 24))
+# mm = ((n - 3600 * h) // 60)
+# ss = str(100 + (n - h * 3600 - mm * 60))
+# mm2 = str(100 + mm)
+# print(h, mm2[1:], ss[1:], sep=':')
+# print(ss, m, mm, h, hh, sep=' ')
+# print (hh, mm, ss, sep=':')
+print(hh, mm[1:], ss[1:], sep=':')
