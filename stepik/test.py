@@ -1,9 +1,18 @@
-n = int(input())
-x = 0
-while 2 ** x <= n:
-    if 2 ** x == n:
-        print('YES')
-        break
-    x = x + 1
-else:
-    print('NO')
+class Counter:
+    def __init__(self, start=0):
+        self.count = start
+
+    def inc(self):
+        self.count += 1
+
+    def res(self):
+        self.count = 0
+
+
+x = Counter()
+for i in range(5):
+    x.inc()
+print(x.count)
+x.res()
+print(x.count)
+
