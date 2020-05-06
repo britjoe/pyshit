@@ -10,4 +10,4 @@ with open('res.txt', 'w') as r:
                 y.append(cd[2:])
                 break
     r.write('\n'.join(sorted(y))+'\n')
-    print(y)
+
